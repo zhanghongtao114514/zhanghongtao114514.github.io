@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>我的第一篇博客</title>
+      <link href="/2021/09/20/wo-de-di-yi-pian-bo-ke/"/>
+      <url>/2021/09/20/wo-de-di-yi-pian-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="开启博客时代！！"><a href="#开启博客时代！！" class="headerlink" title="开启博客时代！！"></a><img src="D:%5CBlog%5Csource_posts%5C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%5CQQ%E5%9B%BE%E7%89%8720210909072323-gigapixel.jpg" alt>开启博客时代！！</h2><p>这还是我第一次写博客，为啥会想到想要写博客，这源于我想对自己学习的大部分东西进行进行一定的整理，不至于在学完大部分东西之后毫无学习过的痕迹，希望在之后能够坚持写博客的习惯。</p><h2 id="搭建博客时候踩到的一些坑！"><a href="#搭建博客时候踩到的一些坑！" class="headerlink" title="搭建博客时候踩到的一些坑！"></a>搭建博客时候踩到的一些坑！</h2><p>我是参考网络上的Hexo+GItHub来搭建的静态网页。</p><p>遇到的第一个问题，在使用<code>hexo d</code>命令却无法上传到GitHub，在进行一番查阅以后，发现错误居然是node和hexo的版本不太匹配，在把Node的版本降至12以后成功上传</p><p>遇到的第二个问题，第一次创建完GitHub的项目之后，将创建好的网页上传上去，发现还是初始网页，在查阅多方资料后，发现创建的GitHub项目的前缀要和自己的GitHub名字一致才能够正常的访问，在一番折腾以后终于能够正常的访问了！！</p><h2 id="关于博客更新的内容"><a href="#关于博客更新的内容" class="headerlink" title="关于博客更新的内容"></a>关于博客更新的内容</h2><p>首先，我觉得应该会更新一些深度学习的模型或者实例，通俗易懂的解析各个模型的原理（毕竟真正理解透一个模型的时间还是比较长的），在以后复习或者重新拿出来看的时候也比较方便。</p><p>其次，由于我在准备参加数学建模竞赛，对于其中的各种模型也会进行学习和整理，分析其中的原理或者贴一些代码及其用法之类的，以便后期使用。</p><p>再次之便是算法了，可能刷一些板子进行整理，刷刷一些算法题整理一下，时刻温习一下不至于忘光。</p><p>最后可能更新一点生活中的琐事，over！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>5W2H | 关于写博客的七点反思</title>
       <link href="/2020/01/14/5w2h-godweiyang/"/>
       <url>/2020/01/14/5w2h-godweiyang/</url>
