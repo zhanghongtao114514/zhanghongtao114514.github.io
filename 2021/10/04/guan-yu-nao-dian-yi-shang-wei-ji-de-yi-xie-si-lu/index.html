@@ -4,13 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="使用某网站api爬取二刺猿图片, DeepLearning 深度学习 ">
+    <meta name="keywords" content="关于脑电仪上位机的一些思路, DeepLearning 深度学习 ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="
-
-灵感来源某一天一个群友在群中发了一串神秘网址http://iw233.cn/api/Random.php，说是可以随机生成一些好康的图片，我出于好奇点了进去，发现能“随机”一些二刺猿图片，正好学了一点点爬虫相关的知识，于是便想要爬取亿点">
+    <meta name="description" content="思路来源在上学期导师让我们学习完《信号处理》这本书以后，这学期便考虑让我们跟随研究生进行脑电仪的开发，鉴于我们知识储备暂时不足，我们便只参与软件方面的开发，查阅了一些资料后，我了解到这叫上位机，接下来的一段时间，对于这个虚拟仪器的开发应该会">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>使用某网站api爬取二刺猿图片 | 张闳涛的博客</title>
+    <title>关于脑电仪上位机的一些思路 | 张闳涛的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -295,13 +293,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/c43126fgy1go7lbpqmymj24io30gkjt.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/c43126fgy1gsp06jmqyej24g02i0b2g.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        使用某网站api爬取二刺猿图片
+                        关于脑电仪上位机的一些思路
                     </div>
                 </div>
             </div>
@@ -412,12 +410,12 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/python爬虫/" target="_blank">
-                            <span class="chip bg-color">python爬虫</span>
+                        <a href="/tags/脑电仪/" target="_blank">
+                            <span class="chip bg-color">脑电仪</span>
                         </a>
                         
-                        <a href="/tags/爬取图片/" target="_blank">
-                            <span class="chip bg-color">爬取图片</span>
+                        <a href="/tags/python/" target="_blank">
+                            <span class="chip bg-color">python</span>
                         </a>
                         
                     </div>
@@ -428,8 +426,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
+                        <a href="/categories/导师研究/" class="post-category" target="_blank">
+                            导师研究
                         </a>
                         
                     </div>
@@ -440,7 +438,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-21
+                    2021-10-04
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -454,14 +452,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    389
+                    682
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -477,49 +475,43 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <img src="https://p.pstatp.com/origin/pgc-image/57ace173fe824932af025d517e22f264" style="zoom:50%;">
+                <h2 id="思路来源"><a href="#思路来源" class="headerlink" title="思路来源"></a>思路来源</h2><p>在上学期导师让我们学习完《信号处理》这本书以后，这学期便考虑让我们跟随研究生进行脑电仪的开发，鉴于我们知识储备暂时不足，我们便只参与软件方面的开发，查阅了一些资料后，我了解到这叫上位机，接下来的一段时间，对于这个虚拟仪器的开发应该会成为我探究的主要方面。</p>
+<h2 id="初步思路"><a href="#初步思路" class="headerlink" title="初步思路"></a>初步思路</h2><p>既然是上位机，那肯定得有一个可视化的界面，哪有人会在控制台里操作呢？在可视化这个方面，参考了多处文件以后，我决定使用python的<code>PyQT5</code>这个库进行界面的可视化，QTDesigner可以方便的像MSF一样绘制自己所需要的图形界面，使用外部工具PyUIC转化成.py代码即可运行，非常的方便奥。</p>
+<p>随后是通信方面的问题，作为上位机，要和下位机通过usb口通信，由于尚未接触到实体下位机，我参考了几篇文章之后，决定使用<code>PySerial</code>模块来实现串口之间的通信。</p>
+<blockquote>
+<p>pyserial模块封装了对串口的访问。</p>
+<p>在支持的平台上有统一的接口。<br>通过python属性访问串口设置。<br>支持不同的字节大小、停止位、校验位和流控设置。<br>可以有或者没有接收超时。<br>类似文件的API，例如read和write，也支持readline等。<br>支持二进制传输，没有null消除，没有cr-lf转换。支持二进制传输，没有null消除，没有cr-lf转换。</p>
+</blockquote>
+<p>至于示波器图形的显示，参考了<a href="[(10条消息">开发工业上位机 用pyqt5_用PyQT5开发上位机软件界面（3）</a> 开发工业上位机 用pyqt5_用PyQT5开发上位机软件界面（3）_小诗璇的博客-CSDN博客](<a href="https://blog.csdn.net/weixin_42251888/article/details/113033390" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42251888/article/details/113033390</a>))</p>
+<p>使用<code>pyqtgraph</code>库来实现对波形图的实时显示</p>
+<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">create_graph</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    graph <span class="token operator">=</span> pg<span class="token punctuation">.</span>PlotWidget<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 实例化PlotWidget()</span>
+    self<span class="token punctuation">.</span>gridLayout<span class="token punctuation">.</span>addWidget<span class="token punctuation">(</span>graph<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 在gridLayout中添加graph</span>
+    graph<span class="token punctuation">.</span>setBackground<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 设置背景颜色</span>
+    graph<span class="token punctuation">.</span>setLabel<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'random'</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 设置Y轴的名称</span>
+    graph<span class="token punctuation">.</span>setYRange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">6000</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># Y轴范围</span>
+    graph<span class="token punctuation">.</span>setXRange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">201</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># X轴范围</span>
+    graph<span class="token punctuation">.</span>showGrid<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 显示网格</span>
+    graph<span class="token punctuation">.</span>setLimits<span class="token punctuation">(</span>xMin<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> xMax<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">,</span> yMin<span class="token operator">=</span><span class="token operator">-</span><span class="token number">100</span><span class="token punctuation">,</span> yMax<span class="token operator">=</span><span class="token number">6000</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 设置缩放范围</span>
+    self<span class="token punctuation">.</span>curve <span class="token operator">=</span> graph<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>pen<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true"># 添加一天曲线</span>
 
-<h2 id="灵感来源"><a href="#灵感来源" class="headerlink" title="灵感来源"></a>灵感来源</h2><p>某一天一个群友在群中发了一串神秘网址<a href="http://iw233.cn/api/Random.php" target="_blank" rel="noopener"><code>http://iw233.cn/api/Random.php</code></a>，说是可以随机生成一些好康的图片，我出于好奇点了进去，发现能“随机”一些二刺猿图片，正好学了一点点爬虫相关的知识，于是便想要爬取亿点点二刺猿图片练练手。</p>
-<h2 id="激动人心的代码部分"><a href="#激动人心的代码部分" class="headerlink" title="激动人心的代码部分"></a>激动人心的代码部分</h2><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> urllib<span class="token punctuation">.</span>request
-<span class="token keyword">import</span> os
-<span class="token keyword">from</span> threading <span class="token keyword">import</span> Thread
-req_url <span class="token operator">=</span> <span class="token string">'http://iw233.cn/api/Random.php'</span>
-root <span class="token operator">=</span> <span class="token string">"D://images//"</span>
+<span class="token keyword">def</span> <span class="token function">draw_curve</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    history_length <span class="token operator">=</span> <span class="token number">200</span>
+    data <span class="token operator">=</span> random<span class="token punctuation">.</span>randrange<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5000</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">global</span> i
+    <span class="token keyword">if</span> i <span class="token operator">&lt;</span> history_length<span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>curve_data<span class="token punctuation">.</span>append<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+        i <span class="token operator">+=</span> <span class="token number">1</span> 
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>curve_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> self<span class="token punctuation">.</span>curve_data<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+        self<span class="token punctuation">.</span>curve<span class="token punctuation">.</span>setData<span class="token punctuation">(</span>self<span class="token punctuation">.</span>curve_data<span class="token punctuation">)</span>
 
-num_per<span class="token operator">=</span>int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"输入需要的图片数:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-threads<span class="token operator">=</span>int<span class="token punctuation">(</span>input<span class="token punctuation">(</span><span class="token string">"输入同时下载图片数:"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-now_img<span class="token operator">=</span><span class="token number">0</span>
-mis_img<span class="token operator">=</span><span class="token number">0</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"-----当前设置为:下载"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>num_per<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"张图片-----\n-----线程数为:"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>threads<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"条-----\n-----默认下载路径为:D://ImagesDownload"</span><span class="token punctuation">)</span>
-<span class="token keyword">if</span> <span class="token operator">not</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    os<span class="token punctuation">.</span>mkdir<span class="token punctuation">(</span>root<span class="token punctuation">)</span>
-
-<span class="token keyword">def</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">global</span> now_img<span class="token punctuation">,</span>mis_img
-    <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>int<span class="token punctuation">(</span>num_per<span class="token operator">/</span>threads<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-        r <span class="token operator">=</span> urllib<span class="token punctuation">.</span>request<span class="token punctuation">.</span>urlopen<span class="token punctuation">(</span>req_url<span class="token punctuation">)</span>
-        path <span class="token operator">=</span> root <span class="token operator">+</span> r<span class="token punctuation">.</span>url<span class="token punctuation">[</span><span class="token number">31</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token operator">not</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            f <span class="token operator">=</span> open<span class="token punctuation">(</span>path<span class="token punctuation">,</span> <span class="token string">'wb'</span><span class="token punctuation">)</span>
-            f<span class="token punctuation">.</span>write<span class="token punctuation">(</span>r<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-            f<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
-            now_img<span class="token operator">=</span>now_img<span class="token operator">+</span><span class="token number">1</span>
-            <span class="token keyword">if</span> now_img<span class="token operator">%</span><span class="token number">10</span><span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
-                <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"*****当前已保存图片"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>now_img<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"张*****\n*****重复图片"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>mis_img<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"张*****"</span><span class="token punctuation">)</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>
-            mis_img<span class="token operator">+=</span><span class="token number">1</span>
-
-
-ts <span class="token operator">=</span> <span class="token punctuation">[</span>Thread<span class="token punctuation">(</span>target<span class="token operator">=</span>get<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>threads<span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token keyword">for</span> t <span class="token keyword">in</span> ts<span class="token punctuation">:</span>
-    t<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token keyword">for</span> t <span class="token keyword">in</span> ts<span class="token punctuation">:</span>
-    t<span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="原理在这"><a href="#原理在这" class="headerlink" title="原理在这"></a>原理在这</h2><p>1.多线程访问网站，加快爬取速度</p>
-<p>2.使用文件名对比以免下载到重复图片</p>
-<p>3.保存各个线程的图片</p>
-<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>差不多每分钟能下载600m左右的图片，但是等多次爬取之后发现，图库有限，一共几万张，10GB左右，并没有很大的图库，但是质量还是非常不错，推荐大家试试看。</p>
+<span class="token keyword">def</span> <span class="token function">time_click</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    timer <span class="token operator">=</span> pg<span class="token punctuation">.</span>QtCore<span class="token punctuation">.</span>QTimer<span class="token punctuation">(</span>self<span class="token punctuation">)</span>
+    timer<span class="token punctuation">.</span>timeout<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>self<span class="token punctuation">.</span>draw_curve<span class="token punctuation">)</span>
+    timer<span class="token punctuation">.</span>start<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>大致思路暂时是这样，具体设计等国庆之后接触完下位机再看看。</p>
 
             </div>
             <hr />
@@ -678,9 +670,9 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《使用某网站api爬取二刺猿图片》
+                    《关于脑电仪上位机的一些思路》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/09/21/shi-yong-mou-wang-zhan-api-pa-qu-er-ci-yuan-tu-pian/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2021/10/04/guan-yu-nao-dian-yi-shang-wei-ji-de-yi-xie-si-lu/" property="cc:attributionName"
                rel="cc:attributionURL">
                 张闳涛
             </a> 采用
@@ -720,9 +712,10 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/10/04/guan-yu-nao-dian-yi-shang-wei-ji-de-yi-xie-si-lu/">
                     <div class="card-image">
@@ -740,9 +733,9 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-10-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-10-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -755,6 +748,7 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -777,13 +771,13 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/20/wo-de-di-yi-pian-bo-ke/">
+                <a href="/2021/09/21/shi-yong-mou-wang-zhan-api-pa-qu-er-ci-yuan-tu-pian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/c43126fgy1gqkw3ipqkwj24922e47wi.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/c43126fgy1go7lbpqmymj24io30gkjt.jpg" class="responsive-img" alt="使用某网站api爬取二刺猿图片">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">使用某网站api爬取二刺猿图片</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -791,14 +785,12 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
                         
                             
 
-
-开启博客时代！！这还是我第一次写博客，为啥会想到想要写博客，这源于我想对自己学习的大部分东西进行进行一定的整理，不至于在学完大部分东西之后毫无学习过的痕迹，希望在之后能够坚持写博客的习惯。
-搭建博客时候踩到的一些坑！我是参考网络上的H
+灵感来源某一天一个群友在群中发了一串神秘网址http://iw233.cn/api/Random.php，说是可以随机生成一些好康的图片，我出于好奇点了进去，发现能“随机”一些二刺猿图片，正好学了一点点爬虫相关的知识，于是便想要爬取亿点
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-09-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2021-09-21
                             </span>
                         <span class="publish-author">
                             
@@ -815,8 +807,12 @@ ts <span class="token operator">=</span> <span class="token punctuation">[</span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/python爬虫/" target="_blank">
+                        <span class="chip bg-color">python爬虫</span>
+                    </a>
+                    
+                    <a href="/tags/爬取图片/" target="_blank">
+                        <span class="chip bg-color">爬取图片</span>
                     </a>
                     
                 </div>
