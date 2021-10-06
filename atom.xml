@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="zhanghongtao.github.io/"/>
-  <updated>2021-10-04T03:21:07.045Z</updated>
+  <updated>2021-10-06T08:39:11.252Z</updated>
   <id>zhanghongtao.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="zhanghongtao.github.io/2021/10/06/zheng-ze-biao-da-shi/"/>
+    <id>zhanghongtao.github.io/2021/10/06/zheng-ze-biao-da-shi/</id>
+    <published>2021-10-06T06:23:27.000Z</published>
+    <updated>2021-10-06T08:39:11.252Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;正则表达式Cheatsheet（查字典了属于是）&quot;&gt;&lt;a href=&quot;#正则表达式Cheatsheet（查字典了属于是）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python库" scheme="zhanghongtao.github.io/categories/python%E5%BA%93/"/>
+    
+    
+      <category term="python" scheme="zhanghongtao.github.io/tags/python/"/>
+    
+      <category term="re正则表达式" scheme="zhanghongtao.github.io/tags/re%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>关于脑电仪上位机的一些思路</title>
